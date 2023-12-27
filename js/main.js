@@ -25,7 +25,6 @@ function add() {
       var userName = "";
 
 
-      // var storedDetails = JSON.parse(localStorage.getItem("information"));
       for (var i = 0; i < allDetails.length; i++) {
          if (emailInput.value === allDetails[i].email && passInput.value === allDetails[i].pass) {
             isValidUser = true;
@@ -35,17 +34,12 @@ function add() {
       }
 
       if (isValidUser) {
-         // console.log("Login successful");
          window.location="./welcom.html";
          localStorage.setItem("loggedInUser", userName);
          
-         // Display success message or redirect to a new page
       } else {
          isNotValid.classList.replace("d-none","d-block");
-         // console.log("Invalid email or password");
-         // isIncorrect.innerHTML = "Not valid information";
 
-         // Display error message or redirect to sign-up page
       }
    }
 }
