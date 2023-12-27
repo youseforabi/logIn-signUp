@@ -28,3 +28,8 @@ input::placeholder{
 .isvalidtUp{
     color: green !important;
 }
+.alert-warning{
+    background-color: black !important;
+    border: black !important;
+    color: red !important;
+}
