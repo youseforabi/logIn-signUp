@@ -86,6 +86,10 @@ function addUp() {
                   isvalidtUp.classList.replace("d-none" , "d-block");
                   isExisttUp.classList.replace("d-block" , "d-none");
                   clearForm();
+                  nameInputUp.classList.remove("is-valid");
+                  emailInputUp.classList.remove("is-valid");
+                  passInputUp.classList.remove("is-valid");
+
                }
        }
     }
