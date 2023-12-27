@@ -46,12 +46,12 @@ function validationEmail(){
    }
 }
 function validationPass(){
-   var passPattern = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&+=])[A-Za-z\d@#$%^&+=]{8,}$/;
-   var secret = nameInputUp.value;
+   var passPattern = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&+=])[A-Za-z\d@#$%^&+=]{8,}$/; 
+     var secret = passInputUp.value;
    if(passPattern.test(secret)==true){
       passInputUp.classList.add("is-valid");
       passInputUp.classList.remove("is-invalid");
-      msgEmail.classList.add("d-none");
+      msgPass.classList.add("d-none");
       return true;
    }else{
       passInputUp.classList.add("is-invalid");
