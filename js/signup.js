@@ -35,17 +35,13 @@ function addUp() {
  
        if (isExistingEmail) {
          isExisttUp.classList.replace("d-none" , "d-block");
-         //  console.log("Email already exists");
-          // Display error message or take appropriate action
+   
        } else {
           allDetails.push(details);
           localStorage.setItem("information", JSON.stringify(allDetails));
           isvalidtUp.classList.replace("d-none" , "d-block");
           isExisttUp.classList.replace("d-block" , "d-none");
 
-         //  localStorage.setItem('sessionUsername', allDetails[i].name);
-         //  console.log("Sign up successful");
-          // Display success message or redirect to a new page
           clearForm();
        }
     }
